@@ -33,6 +33,7 @@ The goal is to build a practical, explainable ML pipeline that answers three cor
   - `other`: 8,308
 - Data quality checks passed for duplicate IDs, negative income, and rate range checks.
 - Leakage exclusions are documented in `reports/tables/leakage_exclusions.csv`.
+- Supporting planning/proposal documents are versioned in `project_docs/`.
 
 ## Primary Notebook for Review
 - EDA and initial report notebook: `notebooks/exploratory_data_analysis.ipynb`
@@ -119,6 +120,7 @@ Primary implementation: `src/data/wrangling.py`
 - `docs/PROJECT_GUIDE.md`
 - `docs/DATA_WRANGLING_GUIDE.md`
 - `docs/MODELING_AND_EVALUATION.md`
+- `project_docs/README.md` (index for project context documents)
 
 ## Roadmap
 Phase 1: Core intelligence pipeline with public data and explainability.  

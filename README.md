@@ -21,6 +21,31 @@ The goal is to build a practical, explainable ML pipeline that answers three cor
 - LendingClub Loan Dataset (Kaggle, 2007-2018)
 - Home Credit Default Risk (Kaggle)
 
+## Summary Findings (Latest Sampled EDA Run)
+- Run profile: `EDA_MAX_ROWS=50000`, `EDA_PLOT_SAMPLE=30000`
+- Total rows loaded: 50,000
+- Resolved rows used for supervised analysis: 44,006
+- Unresolved rows excluded: 5,994 (11.99%)
+- Resolved default rate: 20.52%
+- Resolved pathway mix:
+  - `pl_refinance`: 24,710
+  - `cc_to_pl`: 10,988
+  - `other`: 8,308
+- Data quality checks passed for duplicate IDs, negative income, and rate range checks.
+- Leakage exclusions are documented in `reports/tables/leakage_exclusions.csv`.
+
+## Primary Notebook for Review
+- EDA and initial report notebook: `notebooks/exploratory_data_analysis.ipynb`
+- End-to-end modeling notebook: `notebooks/end_to_end_pipeline.ipynb`
+- EDA output artifacts:
+  - `reports/tables/eda_summary.json`
+  - `reports/tables/data_quality_checks.csv`
+  - `reports/tables/data_cleaning_summary.csv`
+  - `reports/tables/missingness_before_after.csv`
+  - `reports/tables/outlier_analysis.csv`
+  - `reports/figures/eda_overview.png`
+  - `reports/figures/eda_feature_distributions.png`
+
 ## Quick Start
 1. Install dependencies from `requirements.txt`.
 2. Place raw datasets under `data/raw` (nested folders are supported).

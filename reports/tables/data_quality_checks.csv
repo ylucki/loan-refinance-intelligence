@@ -2,5 +2,5 @@ check,status,value,details
 duplicate_id_rows,pass,0,Expected unique loan id per row.
 negative_annual_income_rows,pass,0,Annual income should not be negative.
 int_rate_out_of_range_rows,pass,0,"Interest rate expected in [0, 60] percent."
-revol_util_out_of_range_rows,warn,2,"Utilization expected in [0, 200] for raw data tolerance."
-unresolved_status_rows,info,912569,Rows excluded from supervised risk labels.
+revol_util_out_of_range_rows,pass,0,"Utilization expected in [0, 200] for raw data tolerance."
+unresolved_status_rows,info,5994,Rows excluded from supervised risk labels.

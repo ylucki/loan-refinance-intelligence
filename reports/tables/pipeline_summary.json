@@ -1,0 +1,51 @@
+{
+  "problem_question": "Predict refinance suitability, estimate refinance rates/savings, and generate pathway-aware recommendations.",
+  "config": {
+    "MODEL_MAX_ROWS": 5000,
+    "CV_SPLITS": 2,
+    "RANDOM_SEARCH_ITERS": 1,
+    "GRID_TOP_K": 0,
+    "ENABLE_SVM": false,
+    "FAST_MODE": true
+  },
+  "rows_raw": 2260701,
+  "rows_resolved_modeling": 5000,
+  "unresolved_excluded": 912569,
+  "default_rate_resolved": 0.1982,
+  "feature_counts": {
+    "numeric_selected": 15,
+    "categorical": 4,
+    "total_model_features": 19
+  },
+  "best_classification_model": "logistic_l1",
+  "classification_calibration": "uncalibrated",
+  "classification_threshold": 0.4,
+  "best_regression_model": "lasso",
+  "classification_test_metrics_champion": {
+    "roc_auc": 0.6927632144391922,
+    "pr_auc": 0.3532089936427266,
+    "log_loss": 0.6499916320656727,
+    "brier": 0.2234351886178219,
+    "precision": 0.2882703777335984,
+    "recall": 0.8100558659217877,
+    "f1": 0.4252199413489736
+  },
+  "regression_test_metrics": {
+    "lasso": {
+      "rmse": 11.658199555689764,
+      "mae": 0.9103115486369419,
+      "mape": 0.06985201974890437,
+      "r2": -3.528561592388823
+    },
+    "ridge": {
+      "rmse": 14.251754443747252,
+      "mae": 1.0121397805995698,
+      "mape": 0.07817218377342755,
+      "r2": -5.767588921138928
+    }
+  },
+  "recommendation_counts": {
+    "hold": 502,
+    "consider": 326
+  }
+}

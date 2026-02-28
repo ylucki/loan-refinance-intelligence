@@ -1,0 +1,13 @@
+{
+  "rows_total": 2260701,
+  "rows_resolved": 1348132,
+  "rows_unresolved": 912569,
+  "unresolved_ratio": 0.4036663848956585,
+  "pathway_counts_resolved": {
+    "pl_refinance": 781442,
+    "cc_to_pl": 295625,
+    "other": 271065
+  },
+  "default_rate_all": 0.11914888346579225,
+  "default_rate_resolved": 0.19980239323745747
+}

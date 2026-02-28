@@ -1,0 +1,4 @@
+column,why_excluded
+total_pymnt,Post-origination repayment outcome not available at decision time.
+last_pymnt_d,Future repayment timing leaks target progression.
+last_credit_pull_d,Post-origination servicing metadata may leak maturity/outcome state.

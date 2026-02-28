@@ -137,3 +137,34 @@ dist
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+
+# Local notebook/runtime artifacts
+.DS_Store
+
+# Project data artifacts (keep folder structure, ignore raw files)
+data/raw/*
+!data/raw/.gitkeep
+!data/raw/**/.gitkeep
+
+# Intermediate and processed artifacts
+data/interim/*
+!data/interim/.gitkeep
+!data/interim/**/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+!data/processed/**/.gitkeep
+
+# Private study/interview notes
+docs/interview_project_walkthrough.md

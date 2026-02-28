@@ -1,0 +1,3 @@
+model,variant,val_brier,error
+logistic_l1,uncalibrated,0.21895434300834946,
+logistic_l1,calibration_failed,,"The 'cv' parameter of CalibratedClassifierCV must be an int in the range [2, inf), an object implementing 'split' and 'get_n_splits', an iterable or None. Got 'prefit' instead."

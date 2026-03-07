@@ -38,6 +38,7 @@ The goal is to build a practical, explainable ML pipeline that answers three cor
 ## Primary Notebook for Review
 - EDA and initial report notebook: `notebooks/exploratory_data_analysis.ipynb`
 - End-to-end modeling notebook: `notebooks/end_to_end_pipeline.ipynb`
+- Consolidated professor-review summary: `reports/executive_summary.md`
 - EDA output artifacts:
   - `reports/tables/eda_summary.json`
   - `reports/tables/data_quality_checks.csv`

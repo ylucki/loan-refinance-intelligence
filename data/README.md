@@ -1,29 +1,25 @@
-# Data Directory
+# Data
 
-Use this directory for all project datasets.
+The `data/raw/` directory is intentionally empty in git. The LendingClub source file is large, so the repository keeps only the folder structure and download instructions.
 
-## Layout
-- `raw/`: immutable source data files
-- `interim/`: cleaned but not finalized data
-- `processed/`: modeling-ready data artifacts
+Download source:
+- [Kaggle: Lending Club](https://www.kaggle.com/datasets/wordsforthewise/lending-club)
 
-## Expected Primary Files
-Place at least one primary LendingClub file anywhere under `raw/`:
-- `lending_club.parquet`
-- `lending_club.csv`
-- `accepted_2007_to_2018Q4.csv`
+File needed for this project:
 - `accepted_2007_to_2018Q4.csv.gz`
 
-Optional secondary dataset:
-- `application_train.csv` (Home Credit)
-- Can be in any nested folder under `raw/`
+Place the file here:
+- `data/raw/lending_club/accepted_2007_to_2018Q4.csv.gz`
 
-## Discovery Assumptions
-- Files are discovered by scanning the current `raw/` tree recursively.
-- Primary LendingClub file is selected by expected name/keyword match; if duplicates exist, the largest match is used.
-- Home Credit is optional and identified by exact file name `application_train.csv`.
+If you already have the unzipped Kaggle layout, this notebook also accepts:
+- `data/raw/lending_club/accepted_2007_to_2018q4.csv/accepted_2007_to_2018Q4.csv`
 
-## Notes
-- Do not commit private or sensitive customer data.
-- Keep raw files unchanged and generate transformed outputs in `interim/` or `processed/`.
-- Keep extracted archive folders in `raw/`; write cleaned versions to `interim/`.
+How the notebook uses the data:
+- each row is one accepted LendingClub loan
+- the notebook filters to `purpose == "credit_card"`
+- only resolved loan statuses are retained for modeling
+- the target label is created from `loan_status`:
+  - `Fully Paid` -> `consider`
+  - default-like outcomes -> `hold`
+
+Raw data files are ignored by git.

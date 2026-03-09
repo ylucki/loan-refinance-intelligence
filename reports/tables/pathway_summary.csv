@@ -1,6 +1,0 @@
-,int_rate_num,int_rate_num,int_rate_num,dti,dti,dti,annual_inc,annual_inc,annual_inc,revol_util_num,revol_util_num,revol_util_num,is_default,is_default,is_default
-,count,mean,median,count,mean,median,count,mean,median,count,mean,median,count,mean,median
-refi_pathway,,,,,,,,,,,,,,,
-cc_to_pl,10988,10.466,9.76,10988,19.116,18.44,10988,78817.604,66000.0,10988,54.975,54.7,10988,0.17,0.0
-pl_refinance,24710,12.434,11.99,24710,19.56,18.99,24710,77296.494,65000.0,24710,51.734,51.2,24710,0.223,0.0
-other,8308,12.7,12.59,8308,17.627,17.18,8308,81562.489,66000.0,8308,45.163,43.5,8308,0.198,0.0

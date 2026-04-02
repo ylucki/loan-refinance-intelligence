@@ -1,0 +1,4 @@
+model,best_cv_roc_auc,best_params
+logistic_regression,0.711,"{'model__C': 1.0, 'model__penalty': 'l1'}"
+random_forest,0.7084,"{'model__max_depth': 12, 'model__min_samples_leaf': 30, 'model__n_estimators': 150}"
+decision_tree,0.6876,"{'model__criterion': 'entropy', 'model__max_depth': 4, 'model__min_samples_leaf': 50}"

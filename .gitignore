@@ -8,3 +8,6 @@ venv/
 data/raw/*
 !data/raw/.gitkeep
 !data/raw/**/.gitkeep
+
+docs/research_notes/
+notebooks/02_exploratory_data_analysis.ipynb

@@ -1,0 +1,4 @@
+model,cv_roc_auc_mean,cv_precision_mean,cv_recall_mean,cv_f1_mean
+logistic_regression,0.7108,0.2705,0.6601,0.3836
+random_forest,0.6828,0.4119,0.0355,0.0649
+decision_tree,0.5417,0.2348,0.2405,0.2376
